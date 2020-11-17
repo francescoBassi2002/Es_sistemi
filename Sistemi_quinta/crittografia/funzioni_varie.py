@@ -50,7 +50,3 @@ def rsa_calcolo_c(m):
     for c in range(2 , m):
         if(MCD(c,m) == 1):
             break
-    return c
-#test
-print(MCD(16,10))
-print(mcm(16,10))
