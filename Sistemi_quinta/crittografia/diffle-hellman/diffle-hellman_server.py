@@ -20,12 +20,12 @@ while(1):
         break
     print("numero non valido ")
 
-
+print(f"b = {b}")
 
 A = int(conn.recv(4096).decode())
-print(f"ricevuto {A}")
+print(f"A ricevuto = {A}")
 B  = (g**b) % N
-print(B)
+print(f"B inviato = {B}")
 conn.sendall(str(B).encode())
 
 K = (A ** b)%N
