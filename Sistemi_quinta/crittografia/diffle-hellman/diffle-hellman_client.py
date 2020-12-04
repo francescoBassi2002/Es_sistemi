@@ -15,15 +15,15 @@ while(1):
     if(a<N):
         break
     print("numero non valido ")
-
+print (f"a = {a}")
 A = (g**a) % N
 
-print(A)
+print(f"A inviato = {A}")
 
 c.sendto(str(A).encode(),tupla)
 
 B = int(c.recv(4096).decode())
-print(f"ricevuto : {B}")
+print(f" B ricevuto : {B}")
 K = (B**a) % N
 
 print(f"il numero finale è {K}")
